@@ -1,0 +1,83 @@
+{% comment %} Banner personalizado tipo barbería {% endcomment %}
+{{ '3ah-banner.css' | asset_url | stylesheet_tag }}
+<section class="threeah-banner {% if section.settings.image_style == 'background' %}threeah-banner--background{% endif %}">
+  {% if section.settings.image_style == 'background' and section.settings.image != blank %}
+    <div class="threeah-banner__background">
+      <img
+        src="{{ section.settings.image | image_url: width: 1920 }}"
+        alt="Barbería"
+        loading="lazy"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    </div>
+  {% endif %}
+  <div class="threeah-banner__content">
+    <span class="threeah-banner__welcome">/BIENVENIDO A BAF/</span>
+    <h1 class="threeah-banner__title">
+      Calidad que<br>
+      es reconocible
+    </h1>
+    <p class="threeah-banner__desc">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit ultrices rutrum. Nunc eu efficitur velit,
+      ornare vestibulum est. Nam vel leo dolor. Vivamus ut augue non leo vulputate sagittis ipsum dolor et.
+    </p>
+    {% render '3ah-button', text: section.settings.button_text, link: section.settings.button_link %}
+  </div>
+  {% if section.settings.image_style == 'side' and section.settings.image != blank %}
+    <div class="threeah-banner__image">
+      <img
+        src="{{ section.settings.image | image_url: width: 900 }}"
+        alt="Barbería"
+        loading="lazy"
+        width="{{ section.settings.image.width }}"
+        height="{{ section.settings.image.height }}"
+      >
+    </div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "3AH Banner Personalizado",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "select",
+      "id": "image_style",
+      "label": "Estilo de imagen",
+      "options": [
+        {
+          "value": "side",
+          "label": "Lateral"
+        },
+        {
+          "value": "background",
+          "label": "Fondo"
+        }
+      ],
+      "default": "side"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texto del botón",
+      "default": "RESERVA UNA CITA"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Enlace del botón"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner tipo barbería"
+    }
+  ]
+}
+{% endschema %}
