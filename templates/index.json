@@ -11,15 +11,26 @@
   "sections": {
     "image_banner_6ifzRi": {
       "type": "image-banner",
+      "blocks": {
+        "heading_TGkQMB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Compra los mejores productos de peluquería",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TGkQMB"
+      ],
       "settings": {
-        "image": "shopify://shop_images/A744195.gif",
-        "image_2": "shopify://shop_images/A744195.gif",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image": "shopify://shop_images/background.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
