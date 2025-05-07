@@ -1,0 +1,482 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-532676027256669086.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-532676027256669086.gps.gpsil [style*="--hvr-bg:"]:hover{background:var(--hvr-bg)}.gps-532676027256669086.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-532676027256669086.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-532676027256669086.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-532676027256669086.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-532676027256669086.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-532676027256669086.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-532676027256669086.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-532676027256669086.gps.gpsil [style*="--hvr-b:"]:hover{border:var(--hvr-b)}.gps-532676027256669086.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-532676027256669086.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-532676027256669086.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-532676027256669086.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-532676027256669086.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-532676027256669086.gps.gpsil [style*="--hvr-c:"]:hover{color:var(--hvr-c)}.gps-532676027256669086.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-532676027256669086.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-532676027256669086.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-532676027256669086.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-532676027256669086.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-532676027256669086.gps.gpsil [style*="--h:"]{height:var(--h)}.gps-532676027256669086.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-532676027256669086.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-532676027256669086.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-532676027256669086.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-532676027256669086.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-532676027256669086.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-532676027256669086.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-532676027256669086.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-532676027256669086.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-532676027256669086.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-532676027256669086.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-532676027256669086.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-532676027256669086.gps.gpsil [style*="--w:"]{width:var(--w)}@media only screen and (max-width:1024px){.gps-532676027256669086.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-532676027256669086.gps.gpsil [style*="--h-tablet:"]{height:var(--h-tablet)}.gps-532676027256669086.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-532676027256669086.gps.gpsil [style*="--pb-tablet:"]{padding-bottom:var(--pb-tablet)}.gps-532676027256669086.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-532676027256669086.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-532676027256669086.gps.gpsil [style*="--pt-tablet:"]{padding-top:var(--pt-tablet)}.gps-532676027256669086.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}}@media only screen and (max-width:767px){.gps-532676027256669086.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-532676027256669086.gps.gpsil [style*="--h-mobile:"]{height:var(--h-mobile)}.gps-532676027256669086.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-532676027256669086.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-532676027256669086.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-532676027256669086.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-532676027256669086.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-532676027256669086.gps.gpsil [style*="--ta-mobile:"]{text-align:var(--ta-mobile)}.gps-532676027256669086.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}}.gps-532676027256669086 .gp-invisible{visibility:hidden}.gps-532676027256669086 .gp-absolute{position:absolute}.gps-532676027256669086 .gp-relative{position:relative}.gps-532676027256669086 .gp-z-1{z-index:1}.gps-532676027256669086 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-532676027256669086 .gp-mb-0{margin-bottom:0}.gps-532676027256669086 .gp-block{display:block}.gps-532676027256669086 .gp-flex{display:flex}.gps-532676027256669086 .gp-inline-flex{display:inline-flex}.gps-532676027256669086 .gp-grid{display:grid}.gps-532676027256669086 .\!gp-hidden{display:none!important}.gps-532676027256669086 .gp-hidden{display:none}.gps-532676027256669086 .gp-h-5{height:20px}.gps-532676027256669086 .gp-h-full{height:100%}.gps-532676027256669086 .gp-w-5{width:20px}.gps-532676027256669086 .gp-max-w-full{max-width:100%}.gps-532676027256669086 .gp-cursor-default{cursor:default}.gps-532676027256669086 .gp-flex-col{flex-direction:column}.gps-532676027256669086 .gp-items-center{align-items:center}.gps-532676027256669086 .gp-justify-center{justify-content:center}.gps-532676027256669086 .gp-gap-y-0{row-gap:0}.gps-532676027256669086 .gp-overflow-hidden{overflow:hidden}.gps-532676027256669086 .gp-break-words{overflow-wrap:break-word}.gps-532676027256669086 .gp-rounded-none{border-radius:0}.gps-532676027256669086 .gp-text-center{text-align:center}.gps-532676027256669086 .gp-text-g-text-3{color:var(--g-c-text-3)}.gps-532676027256669086 .gp-no-underline{text-decoration-line:none}.gps-532676027256669086 .gp-opacity-25{opacity:.25}.gps-532676027256669086 .gp-opacity-30{opacity:.3}.gps-532676027256669086 .gp-opacity-75{opacity:.75}.gps-532676027256669086 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-532676027256669086 .gp-duration-200{transition-duration:.2s}.gps-532676027256669086 .gp-duration-300{transition-duration:.3s}.gps-532676027256669086 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-532676027256669086 .disabled\:gp-btn-disabled:disabled{cursor:default}.gps-532676027256669086 .\[\&_\.shopify-payment-button\\_\\_button--unbranded\]\:\!gp-g-paragraph-1 .shopify-payment-button__button--unbranded{font-family:var(--g-p1-ff)!important;font-size:var(--g-p1-size)!important;font-style:var(--g-p1-fs)!important;font-weight:var(--g-p1-weight)!important;letter-spacing:var(--g-p1-ls)!important;line-height:var(--g-p1-lh)!important}.gps-532676027256669086 .\[\&_\.shopify-payment-button\\_\\_button--unbranded\]\:\!gp-g-s-medium .shopify-payment-button__button--unbranded{padding:8px 24px!important}.gps-532676027256669086 .disabled\:gp-pointer-events-none:disabled{pointer-events:none}.gps-532676027256669086 .disabled\:gp-opacity-30:disabled{opacity:.3}.gps-532676027256669086 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-visible{visibility:visible}.gps-532676027256669086 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-invisible{visibility:hidden}@keyframes gp-spin{to{transform:rotate(1turn)}}.gps-532676027256669086 .gp-group[data-state=loading] .group-data-\[state\=loading\]\:gp-animate-spin{animation:gp-spin 1s linear infinite}@media (max-width:1024px){.gps-532676027256669086 .tablet\:\!gp-hidden{display:none!important}.gps-532676027256669086 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-532676027256669086 .mobile\:\!gp-hidden{display:none!important}.gps-532676027256669086 .mobile\:gp-hidden{display:none}}.gps-532676027256669086 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-532676027256669086 .\[\&_\.shopify-payment-button\\_\\_button--unbranded\]\:gp-min-h-fit .shopify-payment-button__button--unbranded{min-height:-moz-fit-content;min-height:fit-content}.gps-532676027256669086 .\[\&_\.shopify-payment-button\\_\\_button--unbranded\]\:gp-text-g-text-3 .shopify-payment-button__button--unbranded{color:var(--g-c-text-3)}.gps-532676027256669086 .disabled\:\[\&_\.shopify-payment-button\\_\\_button--unbranded\]\:gp-pointer-events-none .shopify-payment-button__button--unbranded:disabled{pointer-events:none}.gps-532676027256669086 .\[\&_p\]\:gp-whitespace-pre-line p{white-space:pre-line}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      enableLazyloadImage id="g_XwqHv8hK" data-id="g_XwqHv8hK"
+        style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:none;--d-mobile:grid;--d-tablet:none;--op:100%;--pt:var(--g-s-4xl);--pl:15px;--pb:var(--g-s-4xl);--pr:15px;--pt-mobile:0px;--pl-mobile:15px;--pb-mobile:20px;--pr-mobile:15px;--pt-tablet:var(--g-s-4xl);--pl-tablet:15px;--pb-tablet:var(--g-s-4xl);--pr-tablet:15px;--cg:var(--g-s-2xl);--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="g_XwqHv8hK gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gr00YrR7yd gp-relative gp-flex gp-flex-col"
+    >
+      
+    {%- assign gpBkProduct = product -%}
+    
+        {%- liquid
+          if request.page_type != 'product'
+            assign product = all_products['pb-cepillo-secador-rotatorio-2-en-1']
+            assign productId = '8765177495878' | times: 1
+            if product == empty or product == null
+              paginate collections.all.products by 100000
+                for item in collections.all.products
+                  if item.id == productId
+                    assign product = item
+                  endif
+                endfor
+              endpaginate
+            endif
+          endif
+        -%}
+        
+
+    {%-if product != empty and product != null -%}
+      {%- assign initVariantId =  -%}
+      {%- assign product_form_id = 'product-form-' | append: "g_ftIu-h29" -%}
+      {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%-if productSelectedVariant == empty or productSelectedVariant == null -%}
+        {%- assign productSelectedVariant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      {%-if variant == empty or variant == null -%}
+        {%- assign variant = product.selected_or_first_available_variant -%}
+      {%- endif -%}
+      <gp-product data-uid="g_ftIu-h29" data-id="g_ftIu-h29"   gp-context='{"productId": {{ product.id }}, "preSelectedOptionIds": [], "isSyncProduct": "", "variantSelected": {{ variant | json | escape }}, "inventoryQuantity": {{ variant.inventory_quantity }}, "quantity": 1, "formId": "{{ product_form_id }}" }'
+        gp-data='{"variantSelected": {{ variant | json | escape }}, "quantity": 1, "productUrl":{{ product.url | json | escape }}, "productHandle":{{ product.handle | json | escape }}, "collectionUrl": {{ collection.url | json | escape }}, "collectionHandle": {{ collection.handle | json | escape }}}'>
+        <product-form class="product-form">
+          {%- form 'product', product, id: product_form_id, class: 'form contents', data-type: 'add-to-cart-form', autocomplete: 'off'  -%}
+            <input type="hidden" name="id" value="{{ variant.id }}" />
+            <input type="hidden" name="quantity" value="{{ quantity }}" />
+            <button type="submit" onclick="return false;" style="display:none;"></button>
+            
+       
+      
+    <div
+      id="g_ftIu-h29" data-id="g_ftIu-h29-row"
+        style="--bs:none;--bw:0px;--bc:transparent;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--cg:30px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%"
+        class="g_ftIu-h29 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="giV7AVbg1r gp-relative gp-flex gp-flex-col"
+    >
+      
+   {%- liquid
+      assign inventory_quantity = variant.inventory_quantity | default: 0
+    -%}
+    <gp-product-button
+      class="gp-product-button"
+      gp-data-wrapper="true"
+      gp-data='{"setting":{"actionEffect":"open-cart-drawer","errorMessage":"Cannot add product to cart","successMessage":"Add product to cart successfully","enableSuccessMessage":true,"enableErrorMessage":true,"label":"AÑADIR AL CARRITO","outOfStockLabel":"Out of stock","errorType":"built-in","customURL":{"link":"/cart","target":"_self"}},"styles":{"errorTypo":{"attrs":{"color":"error"},"type":"paragraph-2"},"successTypo":{"attrs":{"color":"success"},"type":"paragraph-2"}},"disabled":"{{variant.available}}","variantID":"{{variant.id}}","totalVariant":"{{product.variants.size}}"}' 
+       gp-href="{{ request.origin }}{{ routes.root_url | split: '/' | join: '/' }}/cart"
+       data-variant-selection-required-message="{{}}"
+    >
+        
+  <gp-button >
+  <div
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pt-mobile:20px;--ta:left;--ta-mobile:center"
+    class="{% unless variant.available %} !gp-hidden {% endunless %}"
+  >
+    <style>
+    .gfoquuW_ga.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #870DFF;
+  
+      
+      
+      
+      
+      
+      
+    }
+
+    .gfoquuW_ga:hover::before {
+      border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+      
+    }
+
+    .gfoquuW_ga:hover .gp-button-icon {
+      color: #870DFF;
+    }
+
+     .gfoquuW_ga .gp-button-icon {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gfoquuW_ga:hover .gp-button-price {
+      color: #870DFF;
+    }
+
+    .gfoquuW_ga .gp-button-price {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gfoquuW_ga .gp-product-dot-price {
+       color: var(--g-c-text-3, text-3);
+    }
+
+    .gfoquuW_ga:hover .gp-product-dot-price {
+      color: #870DFF;
+    }
+  </style>
+    <button
+      type="submit" data-id="gfoquuW_ga" aria-label="AÑADIR AL CARRITO"
+      name="add" gp-data-hidden="{% unless variant.available %}true{% endunless %}"
+      data-state="idle"
+      class="gfoquuW_ga gp-button-base gp-rounded-none gp-max-w-full gp-relative gp-group gp-inline-flex gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-300 disabled:gp-btn-disabled disabled:gp-opacity-30 disabled:gp-pointer-events-none gp-text-g-text-3 gp-button-atc tcustomizer-submit-button"
+      style="--hvr-bg:#FFFFFF;--bg:#870DFF;--shadow:none;--w:Auto;--w-tablet:Auto;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:24px;--pr:24px;--pt:8px;--pb:8px;--pl-mobile:24px;--pr-mobile:24px;--pt-mobile:8px;--pb-mobile:8px;--hvr-c:#870DFF;--c:var(--g-c-text-3, text-3);--size:16px;--size-tablet:16px;--size-mobile:13px;--ff:var(--g-font-Helvetica, 'Helvetica'), var(--g-font-body, body);--lh:180%;--lh-tablet:180%;--lh-mobile:180%;--weight:bold"
+    >
+        <svg
+          class="gp-invisible gp-absolute gp-h-5 gp-w-5 group-data-[state=loading]:gp-animate-spin group-data-[state=loading]:gp-visible"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <circle
+            class="gp-opacity-25"
+            cx="12"
+            cy="12"
+            r="10"
+            stroke="currentColor"
+            stroke-width="4"
+          ></circle>
+          <path
+            class="gp-opacity-75"
+            fill="currentColor"
+            d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+          ></path>
+        </svg>
+    <div
+    class="gp-inline-flex">
+    
+      <span
+        data-gp-text
+        class="gp-button-text-only gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-z-1 gp-h-full gp-flex gp-items-center gp-overflow-hidden 
+        "
+        style="--size:16px;--size-tablet:16px;--size-mobile:13px"
+      >
+        {{ "sections.gp-global-section-532676027256669086.ggfoquuW_ga_label_html" | t }}
+      </span>
+      </div>
+    
+    </button>
+  </div>
+  </gp-button>
+
+        
+  <gp-button >
+  <div
+    style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--pt-mobile:20px;--ta:left;--ta-mobile:center"
+    class="{% if variant.available %} !gp-hidden {% endif %}"
+  >
+    <style>
+    .gfoquuW_ga-sold-out.gp-button-base::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      pointer-events: none;
+      border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #870DFF;
+  
+      
+      
+      
+      
+      
+      
+    }
+
+    .gfoquuW_ga-sold-out:hover::before {
+      border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+      
+    }
+
+    .gfoquuW_ga-sold-out:hover .gp-button-icon {
+      color: #870DFF;
+    }
+
+     .gfoquuW_ga-sold-out .gp-button-icon {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gfoquuW_ga-sold-out:hover .gp-button-price {
+      color: #870DFF;
+    }
+
+    .gfoquuW_ga-sold-out .gp-button-price {
+      color: var(--g-c-text-3, text-3);
+    }
+
+    .gfoquuW_ga-sold-out .gp-product-dot-price {
+       color: var(--g-c-text-3, text-3);
+    }
+
+    .gfoquuW_ga-sold-out:hover .gp-product-dot-price {
+      color: #870DFF;
+    }
+  </style>
+    <button
+      type="button" data-id="gfoquuW_ga" aria-label="Out of stock"
+      gp-data-hidden="{% if variant.available %}true{% endif %}"
+      data-state="idle"
+      class="gfoquuW_ga-sold-out gp-button-base gp-rounded-none gp-max-w-full gp-relative gp-group gp-inline-flex gp-items-center gp-justify-center gp-no-underline gp-transition-colors gp-duration-300 disabled:gp-btn-disabled disabled:gp-opacity-30 disabled:gp-pointer-events-none gp-text-g-text-3 gp-button-sold-out btn-disabled gp-opacity-30 gp-cursor-default"
+      style="--hvr-bg:#FFFFFF;--bg:#870DFF;--shadow:none;--w:Auto;--w-tablet:Auto;--w-mobile:100%;--h:Auto;--h-tablet:Auto;--h-mobile:Auto;--pl:24px;--pr:24px;--pt:8px;--pb:8px;--pl-mobile:24px;--pr-mobile:24px;--pt-mobile:8px;--pb-mobile:8px;--hvr-c:#870DFF;--c:var(--g-c-text-3, text-3);--size:16px;--size-tablet:16px;--size-mobile:13px;--ff:var(--g-font-Helvetica, 'Helvetica'), var(--g-font-body, body);--lh:180%;--lh-tablet:180%;--lh-mobile:180%;--weight:bold"
+    >
+      
+    <div
+    class="gp-inline-flex">
+    
+      <span
+        data-gp-text
+        class="gp-button-text-only gp-break-words group-data-[state=loading]:gp-invisible [&_p]:gp-whitespace-pre-line gp-z-1 gp-h-full gp-flex gp-items-center gp-overflow-hidden 
+        "
+        style="--size:16px;--size-tablet:16px;--size-mobile:13px"
+      >
+        {{ "sections.gp-global-section-532676027256669086.ggfoquuW_ga_outOfStockLabel_html" | t }}
+      </span>
+      </div>
+    
+    </button>
+  </div>
+  </gp-button>
+
+    </gp-product-button>
+    <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-button.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  <div gp-el-wrapper style="--bs:solid;--bw:0px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%" class="gbqNtUW_q5 ">
+      
+    {%- liquid
+      assign inventory_quantity = variant.inventory_quantity | default: 0
+      assign supported_payment_methods = shop.enabled_payment_types
+    -%}
+    <gp-product-dynamic data-id="gbqNtUW_q5" data-translate-label="COMPRAR AHORA"  gp-data='{"setting":{"label":"COMPRAR AHORA"},"totalVariant":"{{product.variants.size}}"}
+    '>
+      <div class="gp-block wrap__button--unbranded__gbqNtUW_q5 [&_.shopify-payment-button\_\_button--unbranded]:gp-min-h-fit disabled:[&_.shopify-payment-button\_\_button--unbranded]:gp-pointer-events-none [&_.shopify-payment-button\_\_button--unbranded]:!gp-g-paragraph-1 [&_.shopify-payment-button\_\_button--unbranded]:!gp-g-s-medium [&_.shopify-payment-button\_\_button--unbranded]:gp-text-g-text-3">
+          {{ form | payment_button }}
+      </div>
+      {% style %}
+        .wrap__button--unbranded__gbqNtUW_q5 {
+          text-align: left !important;
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button {
+          display: inline-block;
+          
+      width: 100%;
+      height: Auto;
+    
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button div {
+          width: 100%;
+          margin-top: 0px !important;
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__more-options {
+          display: none;
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded {
+          max-width: 100%;
+          min-width: unset;
+          background-color: unset !important;
+          position: relative;
+          border: none !important;
+          margin: 0;
+          z-index: 0;
+          border-radius: unset;
+          width: 100%;
+          
+  font-family: var(--g-font-Helvetica, 'Helvetica'), var(--g-font-body, body) !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  ;
+  line-height: 180% !important;
+  ;
+  ;
+  ;
+  
+          color: var(--g-c-text-3, text-3) !important;
+          
+          padding-top: 8px !important;;
+      padding-bottom: 8px !important;;
+      padding-left: 24px !important;;
+      padding-right: 24px !important;;
+    
+          
+      
+      
+      
+      
+      
+          
+      
+      height: Auto;
+    
+        }
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded::before {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          pointer-events: none;
+          z-index: -1;
+          border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+          
+      
+      
+      
+      
+      
+          background-color: var(--g-c-brand, brand);
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded:hover {
+          
+          
+        }
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded:hover::before {
+          border-style: none;
+  border-width: 1px 1px 1px 1px;
+  
+  
+          
+          background-color: var(--g-c-highlight, highlight);
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded::after {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded::after:hover {
+          border-radius: 0;
+          box-shadow: none;
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button > div {
+          max-width: 100%;
+        }
+
+        .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button > div > div {
+          max-width: 100%;
+        }
+
+        @media only screen and (max-width: 1024px) and (min-width: 768px)  {
+          .wrap__button--unbranded__gbqNtUW_q5 {
+            
+          }
+          .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button {
+            
+      width: 100%!important;;
+      height: Auto!important;;
+    
+          }
+          .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded {
+            width: 100%;
+
+            padding-top: ;
+      padding-bottom: ;
+      padding-left: ;
+      padding-right: ;
+    
+            line-height: 180% !important;
+            font-size: 16px !important;
+            
+      width: 100%;
+      height: Auto;
+    
+          }
+        }
+
+        @media only screen and (max-width: 767px) {
+          .wrap__button--unbranded__gbqNtUW_q5 {
+            
+          }
+          .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button {
+            
+      width: 100%!important;;
+      height: Auto!important;;
+    
+          }
+          .wrap__button--unbranded__gbqNtUW_q5 .shopify-payment-button .shopify-payment-button__button--unbranded {
+            width: 100%;
+            padding-top: ;
+      padding-bottom: ;
+      padding-left: ;
+      padding-right: ;
+    
+            line-height: 180% !important;
+            font-size: 14px !important;
+            
+      width: 100%;
+      height: Auto;
+    
+          }
+        }
+
+        {% endstyle %}
+      </gp-product-dynamic>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product-dynamic.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+      </div>
+    </div>
+    </div>
+   
+    
+          {%- endform -%}
+        </product-form>
+      </gp-product>
+      {%- assign product = gpBkProduct -%}
+    {% else %}
+      <div class="gp-text-center">{{ "gempages.Product.product_not_found" | t }}</div>
+    {%- endif -%}
+     <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-product.v2.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+    </div>
+  
+            </section>
+           
+    
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "Inicio 8" }],
+    "name": "Inicio 8",
+    "tag": "section",
+    "class": "gps-532676027256669086 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/3ah-barber-supplies/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=532676027256669086)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"es":{"ggfoquuW_ga_label_html":"AÑADIR AL CARRITO","ggfoquuW_ga_outOfStockLabel_html":"Out of stock","ggfoquuW_ga_unavailableLabel_html":"Unavailable"}}
+  }
+{% endschema %}

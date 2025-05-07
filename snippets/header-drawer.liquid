@@ -43,7 +43,7 @@
                         tabindex="-1"
                       >
                         <div class="menu-drawer__inner-submenu">
-                          <button class="menu-drawer__close-button link link--text focus-inset">
+                          <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
                             <span class="svg-wrapper">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
                             </span>
@@ -83,6 +83,7 @@
                                     >
                                       <button
                                         class="menu-drawer__close-button link link--text focus-inset"
+                                        aria-expanded="true"
                                       >
                                         <span class="svg-wrapper">
                                           {{- 'icon-arrow.svg' | inline_asset_content -}}

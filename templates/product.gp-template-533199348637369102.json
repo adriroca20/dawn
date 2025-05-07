@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_533199348788429582": {
+      "type": "gp-section-533199348788429582",
+      "settings": {
+        "section_preload": "true",
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_536252334502577332": {
+      "type": "gp-section-536252334502577332",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199348905804558": {
+      "type": "gp-section-533199348905804558",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199348939358990": {
+      "type": "gp-section-533199348939358990",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199348905870094": {
+      "type": "gp-section-533199348905870094",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199659032642536": {
+      "type": "gp-section-533199659032642536",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199348821918478": {
+      "type": "gp-section-533199348821918478",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199349023245070": {
+      "type": "gp-section-533199349023245070",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199348889027342": {
+      "type": "gp-section-533199348889027342",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_533199348872250126": {
+      "type": "gp-section-533199348872250126",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    }
+  },
+  "order": [
+    "gp_section_533199348788429582",
+    "gp_section_536252334502577332",
+    "gp_section_533199348905804558",
+    "gp_section_533199348939358990",
+    "gp_section_533199348905870094",
+    "gp_section_533199659032642536",
+    "gp_section_533199348821918478",
+    "gp_section_533199349023245070",
+    "gp_section_533199348889027342",
+    "gp_section_533199348872250126"
+  ]
+}

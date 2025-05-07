@@ -1,0 +1,292 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_a9zwCr": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_nTcyt6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/A744752.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_rpzWfd": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/A744195.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_ThfQ4X": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/A744722.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_PGkiqc": {
+          "type": "slide",
+          "settings": {
+            "heading": "Diapositiva de imagen",
+            "heading_size": "h1",
+            "subheading": "Cuenta la historia de tu marca a través de imágenes",
+            "button_label": "Etiqueta de botón",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_nTcyt6",
+        "slide_rpzWfd",
+        "slide_ThfQ4X",
+        "slide_PGkiqc"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "Presentación de diapositivas sobre tu marca"
+      }
+    },
+    "701268ba-547b-42fa-a07e-ca6214982e09": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "<strong>BEST SELLERS<\/strong>",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "new-arrivals",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3a27db53-eed5-448c-a60e-c3c11bbcc53b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--19554947137862__3a27db53-eed5-448c-a60e-c3c11bbcc53b-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "QUIERO MI ONYX",
+            "button_link": "shopify:\/\/products\/jrl-onyx",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19554947137862__3a27db53-eed5-448c-a60e-c3c11bbcc53b-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "8fa647e1-93ce-487a-81d4-0f3e6e79e162": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--19554947137862__8fa647e1-93ce-487a-81d4-0f3e6e79e162-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>RAGNAR<\/strong><\/em>",
+            "heading_size": "h1"
+          }
+        },
+        "template--19554947137862__8fa647e1-93ce-487a-81d4-0f3e6e79e162-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>YA DISPONIBLES<\/h5>",
+            "text_style": "subtitle"
+          }
+        },
+        "template--19554947137862__8fa647e1-93ce-487a-81d4-0f3e6e79e162-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "COMPRAR SPACE-X",
+            "button_link": "shopify:\/\/products\/ragnar-space-x-cortapelos",
+            "button_style_secondary": true
+          }
+        }
+      },
+      "block_order": [
+        "template--19554947137862__8fa647e1-93ce-487a-81d4-0f3e6e79e162-heading-1",
+        "template--19554947137862__8fa647e1-93ce-487a-81d4-0f3e6e79e162-text-1",
+        "template--19554947137862__8fa647e1-93ce-487a-81d4-0f3e6e79e162-button-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/650_-2_13.48.27.gif",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_di4tet": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_kTQ9Lx": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cera Hybrid",
+            "heading_size": "h1"
+          }
+        },
+        "text_cPipa8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Efecto natural al alcance de tus manos.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_nYCmwD": {
+          "type": "button",
+          "settings": {
+            "button_label": "COMPRAR",
+            "button_link": "shopify:\/\/products\/3ah-cera-moldeable-hybrid-1",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kTQ9Lx",
+        "text_cPipa8",
+        "button_nYCmwD"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/gempages_527701169523393489-8400e8c0-a424-46e0-85dc-5f961af6bb60.gif",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_GEbFEe": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "ESENCIALES",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "higiene",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow_a9zwCr",
+    "701268ba-547b-42fa-a07e-ca6214982e09",
+    "3a27db53-eed5-448c-a60e-c3c11bbcc53b",
+    "8fa647e1-93ce-487a-81d4-0f3e6e79e162",
+    "image_with_text_di4tet",
+    "featured_collection_GEbFEe"
+  ]
+}

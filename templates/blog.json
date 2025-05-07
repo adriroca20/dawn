@@ -1,19 +1,165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-blog",
+      "disabled": true,
       "settings": {
-        "layout": "collage",
+        "layout": "grid",
         "show_image": true,
         "image_height": "medium",
         "show_date": true,
         "show_author": false,
+        "padding_top": 0,
+        "padding_bottom": 68
+      }
+    },
+    "485006ff-0bb9-47d9-a37a-86f74c0eaab7": {
+      "type": "image-banner",
+      "blocks": {
+        "template--19554947039558__485006ff-0bb9-47d9-a37a-86f74c0eaab7-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "<em><strong>CURSOS ONLINE</strong></em>",
+            "heading_size": "h1"
+          }
+        },
+        "template--19554947039558__485006ff-0bb9-47d9-a37a-86f74c0eaab7-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Don´t be a <strong>Barber</strong> be an <strong>Artist</strong>​®️​​",
+            "text_style": "body"
+          }
+        },
+        "template--19554947039558__485006ff-0bb9-47d9-a37a-86f74c0eaab7-buttons-1": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "QUIERO APRENDER",
+            "button_link_1": "shopify://blogs/curso-online/curso-online",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--19554947039558__485006ff-0bb9-47d9-a37a-86f74c0eaab7-heading-1",
+        "template--19554947039558__485006ff-0bb9-47d9-a37a-86f74c0eaab7-text-1",
+        "template--19554947039558__485006ff-0bb9-47d9-a37a-86f74c0eaab7-buttons-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/5EC1E1E8-F519-435B-B025-433B77737A60.gif",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "video_8xbCcF": {
+      "type": "video",
+      "settings": {
+        "heading": "VISÓN DE LA MARCA 2024",
+        "heading_size": "h1",
+        "enable_video_looping": false,
+        "video_url": "https://youtu.be/PzJ18lG69xI?si=C_JC5wQD_5sLmTf_",
+        "cover_image": "shopify://shop_images/sddefault.jpg",
+        "description": "",
+        "full_width": false,
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "713d4a14-483a-46fc-8eb7-ddbe42910dc6": {
+      "type": "multirow",
+      "blocks": {
+        "template--19554947039558__713d4a14-483a-46fc-8eb7-ddbe42910dc6-row-1": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/A744178.jpg",
+            "caption": "",
+            "heading": "Más que un simple \"proveedor\"",
+            "text": "<p>3AH nace como una empresa que está <strong>redefiniendo </strong>el arte de la barbería. Somos la <strong>chispa </strong>que enciende la <strong>creatividad </strong>y la <strong>innovación </strong>en cada barbero de esta nueva generación.</p>",
+            "button_label": "COMPRAR AHORA",
+            "button_link": "shopify://products/pulverizador-negro-japones-eurostil"
+          }
+        },
+        "template--19554947039558__713d4a14-483a-46fc-8eb7-ddbe42910dc6-row-2": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/A744253.jpg",
+            "caption": "",
+            "heading": "Elevamos la excelencia de la indústria",
+            "text": "<p>Nuestra <strong>misión </strong>es simple pero ambiciosa: potenciar el <strong>talento </strong>de nuestros clientes y ayudarlos a alcanzar nuevas alturas en su oficio. Con un enfoque en la <strong>calidad </strong>y la <strong>comunidad </strong></p>",
+            "button_label": "COMPRAR AHORA",
+            "button_link": "shopify://products/hairspray-super-strong-400-ml"
+          }
+        },
+        "template--19554947039558__713d4a14-483a-46fc-8eb7-ddbe42910dc6-row-3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/A744831_copia.jpg",
+            "caption": "",
+            "heading": "Una Experiencia que se siente Personal",
+            "text": "<p>Nuestros productos están diseñados para que cada barbero se sienta <strong>especial</strong>. Creamos <strong>vínculos </strong>significativos con aquellos que comparten nuestra pasión por el estilo y la <strong>autenticidad</strong>.</p>",
+            "button_label": "COMPRAR AHORA",
+            "button_link": "shopify://products/fresh-fade-2020c-pack-gold"
+          }
+        },
+        "a50e7454-c05b-4672-9f0f-d38788b7d2ee": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/A744722.jpg",
+            "caption": "",
+            "heading": "¡El futuro de la barbería está en tus manos!",
+            "text": "<p></p><p>En 3AH no solo vendemos productos; creamos <strong>oportunidades</strong>, fomentamos el <strong>crecimiento </strong>y cultivamos la <strong>confianza</strong>. Siéntete <strong>orgulloso </strong>de formar parte de esta <strong>revolución</strong>. </p>",
+            "button_label": "COMPRAR AHORA",
+            "button_link": "shopify://products/fx8700bke"
+          }
+        }
+      },
+      "block_order": [
+        "template--19554947039558__713d4a14-483a-46fc-8eb7-ddbe42910dc6-row-1",
+        "template--19554947039558__713d4a14-483a-46fc-8eb7-ddbe42910dc6-row-2",
+        "template--19554947039558__713d4a14-483a-46fc-8eb7-ddbe42910dc6-row-3",
+        "a50e7454-c05b-4672-9f0f-d38788b7d2ee"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "485006ff-0bb9-47d9-a37a-86f74c0eaab7",
+    "video_8xbCcF",
+    "713d4a14-483a-46fc-8eb7-ddbe42910dc6"
   ]
 }

@@ -1,14 +1,231 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "collapsible_content_bfcjxb": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_QR9fHm": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Tenéis tienda fisica",
+            "icon": "none",
+            "row_content": "<p>Sí, estamos ubicados en Avd. Al Vedat 180, local A5.</p><p>Pero no tenemos todos los productos en tienda física así que si quieres venir estas totalmente invitado y te cogeremos el pedido en persona para enviártelo a casa.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_HTNtcQ": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Ofrecen asesoramiento personalizado sobre el uso de sus productos?",
+            "icon": "none",
+            "row_content": "<p>¡Absolutamente! Nuestro equipo está compuesto por expertos en productos de barbería que están más que felices de proporcionarte asesoramiento personalizado sobre cómo usar nuestros productos de manera efectiva. No dudes en contactarnos con cualquier pregunta o inquietud que puedas tener.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_QR9fHm",
+        "collapsible_row_HTNtcQ"
+      ],
+      "settings": {
+        "caption": "PRODUCTOS",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_aaAXbU": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_MwmdHG": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cómo puedo realizar un seguimiento de mi pedido una vez que ha sido enviado?",
+            "icon": "none",
+            "row_content": "<p>Una vez que tu pedido haya sido enviado, recibirás un correo electrónico de confirmación con un número de seguimiento. Este número te permitirá rastrear tu paquete y conocer su ubicación en tiempo real a medida que se acerca a su destino.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XP9dd4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuál es el coste de envío?",
+            "icon": "none",
+            "row_content": "<p>España y Portugal: Si el pedido es superior a 100€, el coste del envío es completamente gratuito y si no llega a esa cantidad tiene un coste de tan solo 7€ en compras hasta 49,99€, y para mayores de 50€ el coste es tan solo 5€.</p><p>Baleares: Los envías a las Islas Baleares tendrán un costo fijo de 9,99€</p><p>El importe de los gastos de envío se calcula automáticamente en el momento de realizar el pedido, dependiendo del destino.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_k4MAaU": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuál es el plazo de entrega?",
+            "icon": "none",
+            "row_content": "<p>El plazo de entrega es de 24/48 horas laborales desde que el paquete sale enviado desde nuestro almacén central en Torrent (Excepto incidencias producidas por un mal funcionamiento del transporte o exceso de pedidos derivados de promociones)</p><p>Debes tener en cuenta que los pedidos son preparados y gestionados en los próximos 2 días hábiles. </p><p>Los envíos a Baleares pueden sufrir un retraso de 1 día sobre los plazos indicados anteriormente debido al transporte marítimo.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_Xi8GG4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Qué pasa si han intentado entregar mi pedido pero me encuentro ausente?",
+            "icon": "none",
+            "row_content": "<p>Dispones de dos intentos de entrega, pero si en ambos te encuentras ausente del domicilio indicado, tu pedido será derivado a una Parcel Shop, donde deberás acudir a recogerlo en un plazo máximo de 10-15 días. </p><p>Toda la información sobre el punto de recogida se te facilitará mediante SMS por parte de la empresa de transportes. Una vez pasado el plazo, el pedido será devuelto a nuestras oficinas.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_nCWBpN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Quiero cancelar mi pedido",
+            "icon": "none",
+            "row_content": "<p>Si deseas cancelar tu pedido, ponte en contacto con nosotros indicando el número de pedido que deseas cancelar y te realizaremos el reembolso del mismo. Deberás hacerlo en un plazo <strong>máximo de 12 horas </strong>después de haberlo realizado. Una vez pasado el plazo indicado, se te reembolsará el importe abonado <strong>descontando X€ del envío </strong>del producto, siendo este el importe del coste del servicio de la empresa de transportes, ya que el envío ya habrá sido tramitado una vez pasado el plazo.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_MwmdHG",
+        "collapsible_row_XP9dd4",
+        "collapsible_row_k4MAaU",
+        "collapsible_row_Xi8GG4",
+        "collapsible_row_nCWBpN"
+      ],
+      "settings": {
+        "caption": "ENVÍOS",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_rhfqRQ": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_9y8iA7": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "No me deja efectuar el pago con mi tarjeta de Crédito/Débito",
+            "icon": "none",
+            "row_content": "<p>Una vez realices el pago, te deberá llegar un SMS por parte de la aplicación de tu banco para que puedas verificar el abono. (Acuérdate de activar las notificaciones)</p><p>Podrás verificar que el pago se ha realizado correctamente cuando te llegue un correo por nuestra parte confirmándote el pedido; de lo contrario, el pedido no ha sido tramitado correctamente.</p><p>Si finalmente has tramitado y confirmado el pago, y en tu cuenta aparece el abono realizado pero no te ha llegado ningún correo confirmando el pedido, por favor, ponte en contacto con nosotros e intentaremos solucionarlo de la mejor manera posible.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_KhmE8t": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Cuáles son los métodos de pago?",
+            "icon": "none",
+            "row_content": "<p>En nuestra pagina web aceptamos el pago mediante Tarjeta de crédito/débito o PayPal</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_qkzrbf": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Hacéis envíos Contrareembolso?",
+            "icon": "none",
+            "row_content": "<p>Actualmente no tenemos la opción de pago contra reembolso. Pero puedes realizar el pedido utilizando como método de pago tarjeta de crédito/débito o con PayPal.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_9y8iA7",
+        "collapsible_row_KhmE8t",
+        "collapsible_row_qkzrbf"
+      ],
+      "settings": {
+        "caption": "PAGO",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_KALfjU": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_gDDkYp": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Necesitas factura?",
+            "icon": "none",
+            "row_content": "<p>Si has realizado una compra como profesional, añade en los datos de pedido el nombre de la empresa junto al CIF, escríbenos un correo solicitando la factura y te la realizaremos.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_BXndXw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "¿Tenéis precios para profesionales?",
+            "icon": "none",
+            "row_content": "<p>Si tienes un negocio y quieres adquirir nuestros productos a precio profesional, ponte en contacto con nosotros a <a href=\"mailto:3ahbarbersupply@gmail.com\" target=\"_blank\" title=\"mailto:3ahbarbersupply@gmail.com\"><span style=\"text-decoration:underline\">3ahbarbersupply@gmail.com </span></a>o al 612-482-397</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_gDDkYp",
+        "collapsible_row_BXndXw"
+      ],
+      "settings": {
+        "caption": "PROFESIONALES",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "collapsible_content_bfcjxb",
+    "collapsible_content_aaAXbU",
+    "collapsible_content_rhfqRQ",
+    "collapsible_content_KALfjU"
   ]
 }

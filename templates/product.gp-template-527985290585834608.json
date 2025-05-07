@@ -1,0 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gp_section_532678614169158549": {
+      "type": "gp-section-532678614169158549",
+      "settings": {
+        "section_preload": "true",
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_536132595075777587": {
+      "type": "gp-section-536132595075777587",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_536132595109331862": {
+      "type": "gp-section-536132595109331862",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_532677491253314713": {
+      "type": "gp-section-532677491253314713",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_528119190737912855": {
+      "type": "gp-section-528119190737912855",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_532677866861626521": {
+      "type": "gp-section-532677866861626521",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_534788972136629243": {
+      "type": "gp-section-534788972136629243",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_536133757233529907": {
+      "type": "gp-section-536133757233529907",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_532678041143345977": {
+      "type": "gp-section-532678041143345977",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_532762223156659285": {
+      "type": "gp-section-532762223156659285",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    },
+    "gp_section_528439756846007318": {
+      "type": "gp-section-528439756846007318",
+      "settings": {
+        "checksum": "_1_1"
+      }
+    }
+  },
+  "order": [
+    "gp_section_532678614169158549",
+    "gp_section_536132595075777587",
+    "gp_section_536132595109331862",
+    "gp_section_532677491253314713",
+    "gp_section_528119190737912855",
+    "gp_section_532677866861626521",
+    "gp_section_534788972136629243",
+    "gp_section_536133757233529907",
+    "gp_section_532678041143345977",
+    "gp_section_532762223156659285",
+    "gp_section_528439756846007318"
+  ]
+}

@@ -1,15 +1,241 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-list-collections",
+      "disabled": true,
       "settings": {
-        "title": "Collections",
+        "title": "CATÁLOGO",
         "sort": "alphabetical",
-        "image_ratio": "square"
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "columns_mobile": "2"
+      }
+    },
+    "9a29b7a7-f7c2-4ac0-9151-47690a294d0c": {
+      "type": "collection-list",
+      "blocks": {
+        "755f8654-1784-4296-8f04-8eeb89efcc27": {
+          "type": "featured_collection",
+          "disabled": true,
+          "settings": {
+            "collection": "packs"
+          }
+        },
+        "template--19554947170630__9a29b7a7-f7c2-4ac0-9151-47690a294d0c-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "clippers-cortadoras-2"
+          }
+        },
+        "6af3e558-69da-4359-bc09-8374134f1630": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "trimmer-patillera"
+          }
+        },
+        "ca73fecc-1ec0-4be7-a319-f29c711d627a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "afeitadoras"
+          }
+        },
+        "template--19554947170630__9a29b7a7-f7c2-4ac0-9151-47690a294d0c-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "tijeras-barbero"
+          }
+        },
+        "3e14100e-be53-472d-9245-8186d500eac2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "recambios"
+          }
+        },
+        "b4377a86-5bf9-4f1d-ba7f-8e61d578e23b": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "secadores"
+          }
+        }
+      },
+      "block_order": [
+        "755f8654-1784-4296-8f04-8eeb89efcc27",
+        "template--19554947170630__9a29b7a7-f7c2-4ac0-9151-47690a294d0c-featured_collection-1",
+        "6af3e558-69da-4359-bc09-8374134f1630",
+        "ca73fecc-1ec0-4be7-a319-f29c711d627a",
+        "template--19554947170630__9a29b7a7-f7c2-4ac0-9151-47690a294d0c-featured_collection-2",
+        "3e14100e-be53-472d-9245-8186d500eac2",
+        "b4377a86-5bf9-4f1d-ba7f-8e61d578e23b"
+      ],
+      "settings": {
+        "title": "<em><strong>MÁQUINAS PARA CORTAR PELO</strong></em>",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "0147774a-1286-4e84-8155-fca0cd3a486d": {
+      "type": "collection-list",
+      "blocks": {
+        "template--19554947170630__0147774a-1286-4e84-8155-fca0cd3a486d-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "higiene"
+          }
+        },
+        "ab6c02b0-eeb5-4fff-abd9-86d74dd163a7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "navajas"
+          }
+        },
+        "template--19554947170630__0147774a-1286-4e84-8155-fca0cd3a486d-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mobiliario"
+          }
+        },
+        "template--19554947170630__0147774a-1286-4e84-8155-fca0cd3a486d-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "limpieza-1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19554947170630__0147774a-1286-4e84-8155-fca0cd3a486d-featured_collection-3",
+        "ab6c02b0-eeb5-4fff-abd9-86d74dd163a7",
+        "template--19554947170630__0147774a-1286-4e84-8155-fca0cd3a486d-featured_collection-2",
+        "template--19554947170630__0147774a-1286-4e84-8155-fca0cd3a486d-featured_collection-1"
+      ],
+      "settings": {
+        "title": "<em><strong>ESENCIALES</strong></em>",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "c19c4e82-b833-4091-99d3-e63b792f030b": {
+      "type": "collection-list",
+      "blocks": {
+        "6318b4e7-fce3-4e3f-83fd-748fdec92ac5": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pomadas"
+          }
+        },
+        "template--19554947170630__c19c4e82-b833-4091-99d3-e63b792f030b-featured_collection-2": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "decoloracion"
+          }
+        },
+        "f7ea5c49-1d7f-4b7e-92bc-d5cafd2c2159": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "coloracion-semi-permanente"
+          }
+        },
+        "template--19554947170630__c19c4e82-b833-4091-99d3-e63b792f030b-featured_collection-1": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "champu-1"
+          }
+        },
+        "template--19554947170630__c19c4e82-b833-4091-99d3-e63b792f030b-featured_collection-3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "acondicionador-mascarilla"
+          }
+        }
+      },
+      "block_order": [
+        "6318b4e7-fce3-4e3f-83fd-748fdec92ac5",
+        "template--19554947170630__c19c4e82-b833-4091-99d3-e63b792f030b-featured_collection-2",
+        "f7ea5c49-1d7f-4b7e-92bc-d5cafd2c2159",
+        "template--19554947170630__c19c4e82-b833-4091-99d3-e63b792f030b-featured_collection-1",
+        "template--19554947170630__c19c4e82-b833-4091-99d3-e63b792f030b-featured_collection-3"
+      ],
+      "settings": {
+        "title": "<em><strong>PRODUCTOS PARA EL CABELLO</strong></em>",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "7526125b-2d70-4f07-8d9d-208e0bb6d53d": {
+      "type": "collection-list",
+      "blocks": {
+        "2fb4acf1-d241-445f-95ff-6d7605abe7c7": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "limpieza"
+          }
+        },
+        "2aaf31b9-00a7-4f17-931b-0d32674ddda3": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "nutricion"
+          }
+        },
+        "a2c7c9ca-f5fc-47c0-a59a-c60f0e71ae62": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "complementos"
+          }
+        }
+      },
+      "block_order": [
+        "2fb4acf1-d241-445f-95ff-6d7605abe7c7",
+        "2aaf31b9-00a7-4f17-931b-0d32674ddda3",
+        "a2c7c9ca-f5fc-47c0-a59a-c60f0e71ae62"
+      ],
+      "settings": {
+        "title": "<em><strong>PRODUCTOS PARA LA BARBA</strong></em>",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "background-1",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 20,
+        "padding_bottom": 0
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "9a29b7a7-f7c2-4ac0-9151-47690a294d0c",
+    "0147774a-1286-4e84-8155-fca0cd3a486d",
+    "c19c4e82-b833-4091-99d3-e63b792f030b",
+    "7526125b-2d70-4f07-8d9d-208e0bb6d53d"
   ]
 }
