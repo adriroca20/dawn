@@ -142,6 +142,15 @@
         "section_title": "UNA SELECCIÓN DE LA 3AH"
       }
     },
+    "3ah_best_sellers_PagcUA": {
+      "type": "3ah-best-sellers",
+      "name": "Los más vendidos",
+      "settings": {
+        "title": "Los más vendidos",
+        "collection": "new-arrivals",
+        "products_to_show": 3
+      }
+    },
     "3ah_services_Tth8ca": {
       "type": "3ah-services",
       "blocks": {
@@ -368,6 +377,7 @@
     "3ah_image_banner_FkVRQy",
     "slideshow_a9zwCr",
     "3ah_selection_KraNRq",
+    "3ah_best_sellers_PagcUA",
     "3ah_services_Tth8ca",
     "701268ba-547b-42fa-a07e-ca6214982e09",
     "3a27db53-eed5-448c-a60e-c3c11bbcc53b",
