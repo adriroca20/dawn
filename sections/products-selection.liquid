@@ -1,0 +1,118 @@
+<link
+  rel="stylesheet"
+  href="{{'section-products-selection.css' | asset_url }}"
+  media="print"
+  onload="this.media='all'"
+>
+
+<div class="products-selection{% if section.settings.full_width %} products-selection--full-width{% endif %}">
+  <div class="page-width">
+    {%- if section.settings.title != blank -%}
+      <h2 class="products-selection__heading">{{ section.settings.title | escape }}</h2>
+    {%- endif -%}
+
+    <div class="products-selection__grid">
+      {%- for block in section.blocks -%}
+        {%- case block.type -%}
+          {%- when 'category' -%}
+            <div class="products-selection__item" {{ block.shopify_attributes }}>
+              <a href="{{ block.settings.link }}" class="products-selection__link">
+                <div class="products-selection__image-wrapper">
+                  {%- if block.settings.image != blank -%}
+                    <img
+                      srcset="
+                        {%- if block.settings.image.width >= 165 -%}{{ block.settings.image | image_url: width: 165 }} 165w,{%- endif -%}
+                        {%- if block.settings.image.width >= 360 -%}{{ block.settings.image | image_url: width: 360 }} 360w,{%- endif -%}
+                        {%- if block.settings.image.width >= 535 -%}{{ block.settings.image | image_url: width: 535 }} 535w,{%- endif -%}
+                        {%- if block.settings.image.width >= 750 -%}{{ block.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
+                        {%- if block.settings.image.width >= 1070 -%}{{ block.settings.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+                        {%- if block.settings.image.width >= 1500 -%}{{ block.settings.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+                        {{ block.settings.image | image_url }} {{ block.settings.image.width }}w
+                      "
+                      src="{{ block.settings.image | image_url: width: 750 }}"
+                      sizes="(min-width: 990px) calc(50vw - 10rem), (min-width: 750px) calc(50vw - 11.5rem), calc(100vw - 4rem)"
+                      alt="{{ block.settings.title | escape }}"
+                      loading="lazy"
+                      width="{{ block.settings.image.width }}"
+                      height="{{ block.settings.image.height }}"
+                      class="products-selection__image"
+                    >
+                  {%- else -%}
+                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+                </div>
+                <div class="products-selection__text">
+                  <h3 class="products-selection__title">{{ block.settings.title | escape }}</h3>
+                </div>
+              </a>
+            </div>
+        {%- endcase -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Selección de Productos",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "default": "UNA SELECCIÓN DE LA FIRMA",
+      "label": "Título"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": false,
+      "label": "Ancho completo"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Categoría",
+      "type": "category",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Título de categoría",
+          "label": "Título"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Enlace"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Selección de Productos",
+      "blocks": [
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
