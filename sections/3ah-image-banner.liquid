@@ -1,5 +1,12 @@
 {% comment %} Banner personalizado tipo barbería {% endcomment %}
 {{ '3ah-banner.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .threeah-banner__background::after {
+    opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
 <section class="threeah-banner {% if section.settings.image_style == 'background' %}threeah-banner--background{% endif %}">
   {% if section.settings.image_style == 'background' and section.settings.image != blank %}
     <div class="threeah-banner__background">
@@ -12,16 +19,23 @@
       >
     </div>
   {% endif %}
-  <div class="threeah-banner__content">
-    <span class="threeah-banner__welcome">/BIENVENIDO A BAF/</span>
-    <h1 class="threeah-banner__title">
-      Calidad que<br>
-      es reconocible
-    </h1>
-    <p class="threeah-banner__desc">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit ultrices rutrum. Nunc eu efficitur velit,
-      ornare vestibulum est. Nam vel leo dolor. Vivamus ut augue non leo vulputate sagittis ipsum dolor et.
-    </p>
+  <div class="threeah-banner__gucci-title">
+    <span>3ah barber</span>
+  </div>
+  {% comment %}
+    <div class="threeah-banner__content">
+      <span class="threeah-banner__welcome">/BIENVENIDO A 3AH/</span>
+      <h1 class="threeah-banner__title">
+        Calidad que<br>
+        es reconocible
+      </h1>
+      <p class="threeah-banner__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit ultrices rutrum. Nunc eu efficitur velit,
+        ornare vestibulum est. Nam vel leo dolor. Vivamus ut augue non leo vulputate sagittis ipsum dolor et.
+      </p>
+    </div>
+  {% endcomment %}
+  <div class="threeah-banner__button">
     {% render '3ah-button', text: section.settings.button_text, link: section.settings.button_link %}
   </div>
   {% if section.settings.image_style == 'side' and section.settings.image != blank %}
@@ -47,6 +61,16 @@
       "label": "Imagen"
     },
     {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "Opacidad del overlay",
+      "default": 50
+    },
+    {
       "type": "select",
       "id": "image_style",
       "label": "Estilo de imagen",
@@ -60,13 +84,13 @@
           "label": "Fondo"
         }
       ],
-      "default": "side"
+      "default": "background"
     },
     {
       "type": "text",
       "id": "button_text",
       "label": "Texto del botón",
-      "default": "RESERVA UNA CITA"
+      "default": "Compra los mejores productos"
     },
     {
       "type": "url",

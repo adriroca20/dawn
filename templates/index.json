@@ -9,32 +9,11 @@
  */
 {
   "sections": {
-    "image_banner_6ifzRi": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_TGkQMB": {
-          "type": "heading",
-          "settings": {
-            "heading": "Compra los mejores productos de peluquería",
-            "heading_size": "h0"
-          }
-        }
-      },
-      "block_order": [
-        "heading_TGkQMB"
-      ],
+    "3ah_image_banner_FkVRQy": {
+      "type": "3ah-image-banner",
+      "name": "Banner tipo barbería",
       "settings": {
-        "image": "shopify://shop_images/background.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "accent-2",
-        "image_behavior": "zoom-in",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
+        "image": "shopify://shop_images/background.jpg"
       }
     },
     "slideshow_a9zwCr": {
@@ -293,7 +272,7 @@
     }
   },
   "order": [
-    "image_banner_6ifzRi",
+    "3ah_image_banner_FkVRQy",
     "slideshow_a9zwCr",
     "701268ba-547b-42fa-a07e-ca6214982e09",
     "3a27db53-eed5-448c-a60e-c3c11bbcc53b",
