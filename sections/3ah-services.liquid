@@ -1,3 +1,21 @@
+{{ '3ah-services.css' | asset_url | stylesheet_tag }}
+
+<section class="threeah-services">
+  <div class="container">
+    <h2 class="services-title">SERVICIOS 3AH</h2>
+    <div class="services-list">
+      {% for block in section.blocks %}
+        {% render '3ah-service',
+          title: block.settings.title,
+          description: block.settings.description,
+          link: block.settings.link,
+          image: block.settings.image,
+          video: block.settings.video
+        %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
 {% schema %}
 {
   "name": "3AH Servicios",
@@ -81,40 +99,3 @@
   ]
 }
 {% endschema %}
-
-<section class="3ah-services">
-  <div class="container">
-    <h2 class="services-title">SERVICIOS 3AH</h2>
-    <div class="services-list">
-      {% for block in section.blocks %}
-        {% render '3ah-service',
-          title: block.settings.title,
-          description: block.settings.description,
-          link: block.settings.link,
-          image: block.settings.image,
-          video: block.settings.video
-        %}
-      {% endfor %}
-    </div>
-  </div>
-</section>
-
-<style>
-  .3ah-services .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 0;
-    text-align: center;
-  }
-  .services-title {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
-  }
-  .services-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-</style>

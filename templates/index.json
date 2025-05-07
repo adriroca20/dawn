@@ -13,7 +13,11 @@
       "type": "3ah-image-banner",
       "name": "Banner tipo barbería",
       "settings": {
-        "image": "shopify://shop_images/background.jpg"
+        "image": "shopify://shop_images/background.jpg",
+        "image_overlay_opacity": 50,
+        "image_style": "background",
+        "button_text": "RESERVA UNA CITA",
+        "button_link": ""
       }
     },
     "slideshow_a9zwCr": {
@@ -90,6 +94,48 @@
         "show_text_below": false,
         "accessibility_info": "Presentación de diapositivas sobre tu marca"
       }
+    },
+    "3ah_services_Tth8ca": {
+      "type": "3ah-services",
+      "blocks": {
+        "service_JkYyT4": {
+          "type": "service",
+          "settings": {
+            "title": "CONCERTAR UNA CITA",
+            "description": "Disfrute de acceso prioritario a la tienda que prefiera el día y la hora que más le convengan. Cuando llegue, su asesor de clientes le mostrará una selección de piezas cuidadosamente seleccionadas para que se las pruebe y las combine.",
+            "link": "#",
+            "image": "shopify://shop_images/3AH_las_americas.jpg",
+            "video": ""
+          }
+        },
+        "service_haMRTf": {
+          "type": "service",
+          "settings": {
+            "title": "RECOGIDA EN TIENDA",
+            "description": "Haga su pedido online y recójalo en la tienda Gucci que prefiera.",
+            "link": "#",
+            "image": "shopify://shop_images/PACKGHOSTJRLBLANCO.jpg",
+            "video": ""
+          }
+        },
+        "service_KMGMDG": {
+          "type": "service",
+          "settings": {
+            "title": "PERSONALIZACIÓN",
+            "description": "Puede incluir un estampado en relieve en distintos bolsos, artículos de equipaje, cinturones, accesorios de piel y productos de la colección para mascotas con iniciales para crear una pieza verdaderamente exclusiva.",
+            "link": "#",
+            "image": "shopify://shop_images/background.jpg",
+            "video": ""
+          }
+        }
+      },
+      "block_order": [
+        "service_JkYyT4",
+        "service_haMRTf",
+        "service_KMGMDG"
+      ],
+      "name": "Servicios 3AH",
+      "settings": {}
     },
     "701268ba-547b-42fa-a07e-ca6214982e09": {
       "type": "featured-collection",
@@ -274,6 +320,7 @@
   "order": [
     "3ah_image_banner_FkVRQy",
     "slideshow_a9zwCr",
+    "3ah_services_Tth8ca",
     "701268ba-547b-42fa-a07e-ca6214982e09",
     "3a27db53-eed5-448c-a60e-c3c11bbcc53b",
     "8fa647e1-93ce-487a-81d4-0f3e6e79e162",
