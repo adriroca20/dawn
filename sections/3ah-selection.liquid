@@ -1,13 +1,15 @@
+{{ '3ah-selection.css' | asset_url | stylesheet_tag }}
+
 <div class="threeah-selection">
   <div class="selection-title">{{ section.settings.section_title }}</div>
   <div class="selection-list">
     {% for block in section.blocks %}
-      {% render '3ah-selection-item',
-        title: block.settings.title,
-        media_type: block.settings.media_type,
-        media: block.settings.media,
-        link: block.settings.link
-      %}
+      {% if block.settings.media != blank %}
+        {% assign media_url = block.settings.media | image_url: width: 400, height: 260 %}
+      {% else %}
+        {% assign media_url = 'https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-image.png' %}
+      {% endif %}
+      {% render '3ah-selection-item', title: block.settings.title, media: media_url, link: block.settings.link %}
     {% endfor %}
   </div>
 </div>
@@ -28,26 +30,7 @@
       "name": "Item de selección",
       "settings": [
         { "type": "text", "id": "title", "label": "Título" },
-        {
-          "type": "select",
-          "id": "media_type",
-          "label": "Tipo de media",
-          "options": [
-            { "value": "image", "label": "Imagen" },
-            { "value": "video", "label": "Video" }
-          ]
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Imagen"
-        },
-        {
-          "type": "video_url",
-          "id": "video",
-          "label": "Video (opcional)",
-          "accept": ["youtube", "vimeo"]
-        },
+        { "type": "image_picker", "id": "media", "label": "Imagen" },
         { "type": "url", "id": "link", "label": "Enlace" }
       ]
     }
@@ -56,42 +39,10 @@
     {
       "name": "3ah Selection",
       "blocks": [
-        {
-          "type": "item",
-          "settings": {
-            "title": "Bolsos de verano para mujer",
-            "media_type": "image",
-            "media": "https://via.placeholder.com/400x260?text=Bolso+Mujer",
-            "link": "#"
-          }
-        },
-        {
-          "type": "item",
-          "settings": {
-            "title": "Calzado de verano para mujer",
-            "media_type": "image",
-            "media": "https://via.placeholder.com/400x260?text=Calzado+Mujer",
-            "link": "#"
-          }
-        },
-        {
-          "type": "item",
-          "settings": {
-            "title": "Calzado de verano para hombre",
-            "media_type": "image",
-            "media": "https://via.placeholder.com/400x260?text=Calzado+Hombre",
-            "link": "#"
-          }
-        },
-        {
-          "type": "item",
-          "settings": {
-            "title": "Bolsos para Hombre",
-            "media_type": "image",
-            "media": "https://via.placeholder.com/400x260?text=Bolso+Hombre",
-            "link": "#"
-          }
-        }
+        { "type": "item", "settings": { "title": "Bolsos de verano para mujer", "link": "#" } },
+        { "type": "item", "settings": { "title": "Calzado de verano para mujer", "link": "#" } },
+        { "type": "item", "settings": { "title": "Calzado de verano para hombre", "link": "#" } },
+        { "type": "item", "settings": { "title": "Bolsos para Hombre", "link": "#" } }
       ]
     }
   ]

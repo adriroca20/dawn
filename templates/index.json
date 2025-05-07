@@ -95,6 +95,53 @@
         "accessibility_info": "Presentación de diapositivas sobre tu marca"
       }
     },
+    "3ah_selection_KraNRq": {
+      "type": "3ah-selection",
+      "blocks": {
+        "item_FfmwM4": {
+          "type": "item",
+          "settings": {
+            "title": "Bolsos de verano para mujer",
+            "media": "shopify://shop_images/ROJO_ELECTRICO_100_ml_L3VEL.webp",
+            "link": "#"
+          }
+        },
+        "item_nnjnbH": {
+          "type": "item",
+          "settings": {
+            "title": "Calzado de verano para mujer",
+            "media": "shopify://shop_images/42066076-2E1E-4E22-A636-FFC82C2039EA.webp",
+            "link": "#"
+          }
+        },
+        "item_f3UNfN": {
+          "type": "item",
+          "settings": {
+            "title": "Calzado de verano para hombre",
+            "media": "shopify://shop_images/Soft-Club-Brush.webp",
+            "link": "#"
+          }
+        },
+        "item_iM6kpx": {
+          "type": "item",
+          "settings": {
+            "title": "Bolsos para Hombre",
+            "media": "shopify://shop_images/razorpink_1.jpg",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "item_FfmwM4",
+        "item_nnjnbH",
+        "item_f3UNfN",
+        "item_iM6kpx"
+      ],
+      "name": "3ah Selection",
+      "settings": {
+        "section_title": "UNA SELECCIÓN DE LA 3AH"
+      }
+    },
     "3ah_services_Tth8ca": {
       "type": "3ah-services",
       "blocks": {
@@ -320,6 +367,7 @@
   "order": [
     "3ah_image_banner_FkVRQy",
     "slideshow_a9zwCr",
+    "3ah_selection_KraNRq",
     "3ah_services_Tth8ca",
     "701268ba-547b-42fa-a07e-ca6214982e09",
     "3a27db53-eed5-448c-a60e-c3c11bbcc53b",

@@ -1,13 +1,15 @@
 <div class="threeah-selection-item">
   <div class="selection-media">
-    {% if media_type == 'video' %}
-      <div class="selection-video">
-        {{ media }}
-      </div>
-    {% else %}
-      <img class="selection-image" src="{{ media }}" alt="{{ title }}" width="400" height="260">
-    {% endif %}
+    <img
+      class="selection-image"
+      src="{{ media | default: 'https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-image.png' }}"
+      alt="{{ title }}"
+      width="400"
+      height="260"
+      loading="lazy"
+    >
   </div>
+
   <div class="selection-content">
     <div class="selection-item-title">{{ title }}</div>
   </div>
