@@ -1,64 +1,62 @@
-{% comment %} Banner personalizado tipo barbería {% endcomment %}
+{% comment %} Hero actualizado tipo dark theme, inspirado en el diseño adjunto {% endcomment %}
 {{ '3ah-banner.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-  .threeah-banner__background::after {
+  .threeah-hero__background::after {
     opacity: {{ section.settings.image_overlay_opacity | divided_by: 100.0 }};
   }
 {%- endstyle -%}
 
-<section class="threeah-banner {% if section.settings.image_style == 'background' %}threeah-banner--background{% endif %}">
-  {% if section.settings.image_style == 'background' and section.settings.image != blank %}
-    <div class="threeah-banner__background">
-      <img
-        src="{{ section.settings.image | image_url: width: 1920 }}"
-        alt="Barbería"
-        loading="lazy"
-        width="{{ section.settings.image.width }}"
-        height="{{ section.settings.image.height }}"
-      >
+<section class="threeah-hero dark-theme">
+  <div class="threeah-hero__container">
+    <h1 class="threeah-hero__title">
+      Productos profesionales<br>
+      para tu salón
+    </h1>
+    <p class="threeah-hero__subtitle">
+      Conecta con la excelencia y transforma tu negocio con nuestra línea premium de productos para peluquería,
+      diseñados para profesionales exigentes.
+    </p>
+    <form class="threeah-hero__form">
+      <input type="email" placeholder="tu@email.com" class="threeah-hero__input">
+      <button type="submit" class="threeah-hero__button">Recibir ofertas</button>
+    </form>
+    <div class="threeah-hero__showcase">
+      <div class="threeah-hero__showcase-img-wrapper">
+        {% if section.settings.image != blank %}
+          <img
+            src="{{ section.settings.image | image_url: width: 1200 }}"
+            alt="Productos de peluquería profesional"
+            class="threeah-hero__showcase-img"
+            loading="lazy"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+          >
+        {% else %}
+          <div class="threeah-hero__placeholder"></div>
+        {% endif %}
+        <div class="threeah-hero__showcase-overlay">
+          <div class="threeah-hero__showcase-content">
+            <div>
+              <h3 class="threeah-hero__showcase-title">Colección Premium</h3>
+              <p class="threeah-hero__showcase-desc">Descubre nuestra nueva línea de productos</p>
+            </div>
+            <a href="{{ section.settings.button_link }}" class="threeah-hero__showcase-btn">Ver catálogo</a>
+          </div>
+        </div>
+      </div>
     </div>
-  {% endif %}
-  <div class="threeah-banner__gucci-title">
-    <span>3ah barber</span>
   </div>
-  {% comment %}
-    <div class="threeah-banner__content">
-      <span class="threeah-banner__welcome">/BIENVENIDO A 3AH/</span>
-      <h1 class="threeah-banner__title">
-        Calidad que<br>
-        es reconocible
-      </h1>
-      <p class="threeah-banner__desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit ultrices rutrum. Nunc eu efficitur velit,
-        ornare vestibulum est. Nam vel leo dolor. Vivamus ut augue non leo vulputate sagittis ipsum dolor et.
-      </p>
-    </div>
-  {% endcomment %}
-  <div class="threeah-banner__button">
-    {% render '3ah-button', text: section.settings.button_text, link: section.settings.button_link %}
-  </div>
-  {% if section.settings.image_style == 'side' and section.settings.image != blank %}
-    <div class="threeah-banner__image">
-      <img
-        src="{{ section.settings.image | image_url: width: 900 }}"
-        alt="Barbería"
-        loading="lazy"
-        width="{{ section.settings.image.width }}"
-        height="{{ section.settings.image.height }}"
-      >
-    </div>
-  {% endif %}
 </section>
 
 {% schema %}
 {
-  "name": "3AH Banner Personalizado",
+  "name": "3AH Hero Dark",
   "settings": [
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Imagen"
+      "label": "Imagen principal"
     },
     {
       "type": "range",
@@ -68,39 +66,17 @@
       "step": 10,
       "unit": "%",
       "label": "Opacidad del overlay",
-      "default": 50
-    },
-    {
-      "type": "select",
-      "id": "image_style",
-      "label": "Estilo de imagen",
-      "options": [
-        {
-          "value": "side",
-          "label": "Lateral"
-        },
-        {
-          "value": "background",
-          "label": "Fondo"
-        }
-      ],
-      "default": "background"
-    },
-    {
-      "type": "text",
-      "id": "button_text",
-      "label": "Texto del botón",
-      "default": "Compra los mejores productos"
+      "default": 80
     },
     {
       "type": "url",
       "id": "button_link",
-      "label": "Enlace del botón"
+      "label": "Enlace del botón catálogo"
     }
   ],
   "presets": [
     {
-      "name": "Banner custom 3ah"
+      "name": "Hero dark 3ah"
     }
   ]
 }
