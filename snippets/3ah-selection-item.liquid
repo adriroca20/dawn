@@ -4,14 +4,19 @@
       class="selection-image"
       src="{{ media | default: 'https://cdn.shopify.com/s/files/1/0533/2089/files/placeholder-image.png' }}"
       alt="{{ title }}"
-      width="400"
-      height="260"
+      width="300"
+      height="300"
       loading="lazy"
     >
   </div>
 
   <div class="selection-content">
-    <div class="selection-item-title">{{ title }}</div>
+    <div>
+      <div class="selection-item-title">{{ title }}</div>
+      {% if subtitle %}
+        <div class="selection-item-subtitle">{{ subtitle }}</div>
+      {% endif %}
+    </div>
+    <a class="selection-link" href="{{ link }}">Ver más</a>
   </div>
-  <a class="selection-link" href="{{ link }}">Ver más</a>
 </div>

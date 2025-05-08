@@ -4,7 +4,6 @@
   position: relative;
   padding: 2rem;
   height: 100vh;
-  background-color: #fff;
 }
 .threeah-banner__button {
   position: absolute;
@@ -178,21 +177,20 @@
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
-  max-width: 800px;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   color: #fff;
 }
 @media (min-width: 768px) {
   .threeah-hero__title {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
 }
 .threeah-hero__subtitle {
   font-size: 1.25rem;
   text-align: center;
   color: #cbd5e1;
-  max-width: 600px;
+  max-width: 670px;
   margin-bottom: 2.5rem;
 }
 .threeah-hero__form {
@@ -201,6 +199,12 @@
   gap: 1rem;
   width: 100%;
   max-width: 400px;
+  margin-bottom: 4rem;
+}
+.threeah-hero__button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   margin-bottom: 4rem;
 }
 @media (min-width: 640px) {

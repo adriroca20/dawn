@@ -11,16 +11,21 @@
   <div class="threeah-hero__container">
     <h1 class="threeah-hero__title">
       Productos profesionales<br>
-      para tu salón
+      para tu barbería
     </h1>
     <p class="threeah-hero__subtitle">
       Conecta con la excelencia y transforma tu negocio con nuestra línea premium de productos para peluquería,
       diseñados para profesionales exigentes.
     </p>
-    <form class="threeah-hero__form">
-      <input type="email" placeholder="tu@email.com" class="threeah-hero__input">
-      <button type="submit" class="threeah-hero__button">Recibir ofertas</button>
-    </form>
+    <div class="threeah-hero__button-container">
+      {% render '3ah-button', button: section.settings.button_link, text: section.settings.button_text %}
+    </div>
+    {% comment %}
+      <form class="threeah-hero__form">
+        <input type="email" placeholder="tu@email.com" class="threeah-hero__input">
+        <button type="submit" class="threeah-hero__button">Recibir ofertas</button>
+      </form>
+    {% endcomment %}
     <div class="threeah-hero__showcase">
       <div class="threeah-hero__showcase-img-wrapper">
         {% if section.settings.image != blank %}
@@ -67,6 +72,12 @@
       "unit": "%",
       "label": "Opacidad del overlay",
       "default": 80
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texto del botón catálogo",
+      "default": "Ver catálogo"
     },
     {
       "type": "url",
