@@ -2,27 +2,92 @@
 
 <section class="threeah-services">
   <div class="container">
-    <h2 class="services-title">SERVICIOS 3AH</h2>
+    <h2 class="services-title">Servicios BeautyPro</h2>
+    <div class="w-20 h-1 bg-white" style="height: 2px; width: 80px; background: white; margin: 0 auto 24px;"></div>
+    <p class="services-subtitle">
+      Descubre nuestra amplia gama de servicios profesionales diseñados para ofrecerte la mejor experiencia
+    </p>
+
     <div class="services-list">
       {% for block in section.blocks %}
-        {% render '3ah-service',
-          title: block.settings.title,
-          description: block.settings.description,
-          link: block.settings.link,
-          image: block.settings.image,
-          video: block.settings.video
-        %}
+        <div class="threeah-service">
+          <div class="service-media">
+            {% if block.settings.video %}
+              <div class="service-video">
+                <iframe
+                  src="{{ block.settings.video | replace: 'watch?v=', 'embed/' }}"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            {% elsif block.settings.image %}
+              <img
+                src="{{ block.settings.image | img_url: '800x' }}"
+                alt="{{ block.settings.title }}"
+                class="service-image"
+                loading="lazy"
+                width="800"
+                height="500"
+              >
+            {% endif %}
+          </div>
+
+          <div class="service-content">
+            <h3 class="service-title">{{ block.settings.title }}</h3>
+            <p class="service-description">{{ block.settings.description }}</p>
+          </div>
+
+          {% if block.settings.link %}
+            <a href="{{ block.settings.link }}" class="service-link">
+              Descubrir
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                style="display: inline-block; vertical-align: middle; margin-left: 4px;"
+              >
+                <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+              </svg>
+            </a>
+          {% endif %}
+        </div>
       {% endfor %}
+    </div>
+
+    <div style="text-align: center; margin-top: 3rem;">
+      <a href="/servicios" class="view-all-button">
+        Ver todos los servicios
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          style="display: inline-block; vertical-align: middle; margin-left: 4px;"
+        >
+          <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </a>
     </div>
   </div>
 </section>
 {% schema %}
 {
-  "name": "3AH Servicios",
+  "name": "BeautyPro Servicios",
   "settings": [
     {
       "type": "header",
-      "content": "Servicios Gucci"
+      "content": "Servicios BeautyPro"
     }
   ],
   "blocks": [
@@ -46,6 +111,26 @@
           "label": "Enlace"
         },
         {
+          "type": "select",
+          "id": "icon",
+          "label": "Icono",
+          "options": [
+            {
+              "value": "calendar",
+              "label": "Calendario"
+            },
+            {
+              "value": "package",
+              "label": "Paquete"
+            },
+            {
+              "value": "sparkles",
+              "label": "Estrellas"
+            }
+          ],
+          "default": "calendar"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Imagen"
@@ -62,14 +147,15 @@
   "max_blocks": 3,
   "presets": [
     {
-      "name": "Servicios 3AH",
+      "name": "Servicios BeautyPro",
       "blocks": [
         {
           "type": "service",
           "settings": {
             "title": "CONCERTAR UNA CITA",
-            "description": "Disfrute de acceso prioritario a la tienda que prefiera el día y la hora que más le convengan. Cuando llegue, su asesor de clientes le mostrará una selección de piezas cuidadosamente seleccionadas para que se las pruebe y las combine.",
+            "description": "Disfrute de acceso prioritario a la tienda que prefiera el día y la hora que más le convengan. Cuando llegue, su asesor de clientes le mostrará una selección de piezas cuidadosamente seleccionadas.",
             "link": "#",
+            "icon": "calendar",
             "image": "shopify://shop_images/servicio-cita.jpg",
             "video": ""
           }
@@ -78,8 +164,9 @@
           "type": "service",
           "settings": {
             "title": "RECOGIDA EN TIENDA",
-            "description": "Haga su pedido online y recójalo en la tienda Gucci que prefiera.",
+            "description": "Haga su pedido online y recójalo en la tienda BeautyPro que prefiera. Nuestro equipo preparará su pedido y le notificará cuando esté listo para recoger.",
             "link": "#",
+            "icon": "package",
             "image": "shopify://shop_images/servicio-recogida.jpg",
             "video": ""
           }
@@ -88,8 +175,9 @@
           "type": "service",
           "settings": {
             "title": "PERSONALIZACIÓN",
-            "description": "Puede incluir un estampado en relieve en distintos bolsos, artículos de equipaje, cinturones, accesorios de piel y productos de la colección para mascotas con iniciales para crear una pieza verdaderamente exclusiva.",
+            "description": "Puede incluir un estampado en relieve en distintos bolsos, artículos de equipaje, cinturones, accesorios de piel y productos de la colección para mascotas con iniciales.",
             "link": "#",
+            "icon": "sparkles",
             "image": "shopify://shop_images/servicio-personalizacion.jpg",
             "video": ""
           }

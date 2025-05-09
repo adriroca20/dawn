@@ -15,8 +15,7 @@
       "settings": {
         "image": "shopify://shop_images/background.jpg",
         "image_overlay_opacity": 50,
-        "image_style": "background",
-        "button_text": "RESERVA UNA CITA",
+        "button_text": "COMPRA TUS PRODUCTOS",
         "button_link": ""
       }
     },
@@ -146,7 +145,7 @@
       "type": "3ah-best-sellers",
       "name": "Los más vendidos",
       "settings": {
-        "title": "Los más vendidos",
+        "title": "LOS MÁS VENDIDOS",
         "collection": "new-arrivals",
         "products_to_show": 3
       }
@@ -190,6 +189,7 @@
         "service_haMRTf",
         "service_KMGMDG"
       ],
+      "custom_css": [],
       "name": "Servicios 3AH",
       "settings": {}
     },
